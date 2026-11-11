@@ -3,220 +3,234 @@ import Projects from "components/Projects.astro";
 import Layout from "layouts/Layout.astro";
 
 const PROJECTS = [
-    {
-        name: "vexide",
-        description: "Open-source embedded Rust async runtime, hardware abstraction layer, and toolchain for authoring user programs on the VEX V5 brain.",
-        links: [
-            {
-                name: "Website",
-                href: "https://vexide.dev/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/vexide/vexide/"
-            },
-            {
-                name: "crates.io",
-                href: "https://crates.io/crates/vexide/"
-            },
-        ]
-    },
 	{
-        name: "vanda",
-        description: "Tiny ARM32 linux kernel bootloader written in Rust that runs as position-independent shellcode.",
-        links: [
-            {
-                name: "GitHub",
-                href: "https://github.com/tropicaaal/vanda/"
-            },
-        ]
-    },
-    {
-        name: "BetterDiscord Installer & Website",
-        description: "Third-party modification for the Discord instant messaging platform with over 35 million downloads.",
-        links: [
-            {
-                name: "Website",
-                href: "https://betterdiscord.app/"
-            },
-            {
-                name: "GitHub (Client)",
-                href: "http://github.com/BetterDiscord/BetterDiscord/"
-            },
-            {
-                name: "GitHub (Installer)",
-                href: "https://github.com/BetterDiscord/Installer/"
-            },
-        ]
-    },
-    {
-        name: "evian",
-        description: "Extensible command-based controls library for autonomous wheeled robots written using vexide.",
-        links: [
-            {
-                name: "Website",
-                href: "https://evian.vexide.dev/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/vexide/evian/"
-            },
-        ]
-    },
-	{
-        name: "erebus",
-        description: "Theme engine for pre-compiled GPUI applications that works by hooking low-level graphics APIs.",
-        links: [
-            {
-                name: "GitHub",
-                href: "https://github.com/tropicaaal/erebus/"
-            },
-        ]
-    },
-    {
-        name: "taolib",
-        description: "Autonomous C++ robot control library intended for competition use featuring real-time position tracking, motion control, and advanced data logging.",
-        links: [
-            {
-                name: "Website",
-                href: "https://taolib.vercel.app/"
-            },
-            {
+		name: "vexide",
+		description:
+			"Open-source embedded Rust async runtime, hardware abstraction layer, and toolchain for authoring user programs on the VEX V5 brain.",
+		links: [
+			{
+				name: "Website",
+				href: "https://vexide.dev/",
+			},
+			{
 				name: "GitHub",
-                href: "https://github.com/tropicaaal/taolib/"
-            },
-        ]
-    },
+				href: "https://github.com/vexide/vexide/",
+			},
+			{
+				name: "crates.io",
+				href: "https://crates.io/crates/vexide/",
+			},
+		],
+	},
 	{
-		name: "vex-v5-qemu",
-		description: "CPU1-level user code emulation of the VEX V5 brain in QEMU!",
+		name: "vanda",
+		description:
+			"Tiny ARM32 linux kernel bootloader written in Rust that runs as position-independent shellcode.",
 		links: [
 			{
 				name: "GitHub",
-				href: "https://github.com/vexide/vex-v5-qemu"
+				href: "https://github.com/tropicaaal/vanda/",
 			},
-		]
+		],
 	},
-    {
-        name: "cargo-v5",
-        description: "CLI wrapper around cargo for uploading and managing projects written for VEX robots. Uses vex-v5-serial for low-level serial communication over USB, Bluetooth LE, or VEXnet.",
-        links: [
-            {
-                name: "GitHub",
-                href: "https://github.com/vexide/cargo-v5/"
-            },
-        ]
-    },
-    {
-        name: "vex-serial",
-        description: "Rust implementation of the serial communications protocol used by VEX V5 devices over USB and Bluetooth.",
-        links: [
-            {
-				name: "GitHub",
-                href: "https://github.com/vexide/vex-serial/"
-            },
-            {
-				name: "crates.io",
-                href: "https://crates.io/vex-v5-serial/"
-            },
-        ]
-    },
-    {
-        name: "fluent-svelte",
-        description: "Implementation of Microsoft's Fluent Design System Components in Svelte and TypeScript. Includes fully accessible, documented, and SSR-ready components.",
-        links: [
-            {
-                name: "Website",
-                href: "https://fluent-svelte.vercel.app/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/tropicaaal/fluent-svelte/"
-            },
-        ]
-    },
-    {
-        name: "files.community",
-        description: "Website I helped make for Files — a third party file manager app for windows with a modern design.",
-        links: [
-            {
-                name: "Website",
-                href: "https://files.community/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/files-community/website/"
-            },
-        ]
-    },
-    {
-        name: "RoboStats & robotevents-rs",
-        description: "Discord bot for viewing information about robotics competitions and teams on RobotEvents.com. Written in Rust using the Serenity framework and my own API wrapper around the RobotEvents v2 API. Used in over 350 communities.",
-        links: [
-            {
-                name: "Invite",
-                href: "https://discord.com/api/oauth2/authorize?client_id=1181453354677850172&permissions=414464657472&scope=bot+applications.commands/"
-            },
-            {
-                name: "GitHub (Bot)",
-                href: "https://github.com/lemlib/RoboStats/"
-            },
-            {
-                name: "GitHub (API)",
-                href: "https://github.com/lemlib/robotevents-rs/"
-            },
-            {
-                name: "crates.io",
-                href: "https://crates.io/robotevents/"
-            },
-        ]
-    },
 	{
-        name: "ModernFlyouts Website",
-        description: "Simple static website I made for ModernFlyouts project.",
-        links: [
-            {
-                name: "Website",
-                href: "https://modernflyouts-community.github.io/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/ModernFlyouts-Community/ModernFlyouts-Community.github.io/"
-            },
-        ]
-    },
-	{
-        name: "Dark Matter",
-        description: "A cold, dark & frosty theme for the Discord chat application with over 1.5 million downloads.",
-        links: [
-            {
-                name: "Theme",
-                href: "https://betterdiscord.app/theme/Dark%20Matter/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/discordstyles/slate/"
-            },
-        ]
-    },
-	{
-        name: "Slate",
-        description: "An optimized, consistent, and functional theme for Discord based on GitHub's design language.",
-        links: [
+		name: "BetterDiscord Installer & Website",
+		description:
+			"Third-party modification for the Discord instant messaging platform with over 35 million downloads.",
+		links: [
 			{
-                name: "Theme",
-                href: "https://betterdiscord.app/theme/Slate/"
-            },
-            {
-                name: "Website",
-                href: "https://discordstyles.github.io/slate-theme/"
-            },
-            {
-                name: "GitHub",
-                href: "https://github.com/discordstyles/slate/"
-            },
-        ]
-    },
+				name: "Website",
+				href: "https://betterdiscord.app/",
+			},
+			{
+				name: "GitHub (Client)",
+				href: "http://github.com/BetterDiscord/BetterDiscord/",
+			},
+			{
+				name: "GitHub (Installer)",
+				href: "https://github.com/BetterDiscord/Installer/",
+			},
+		],
+	},
+	{
+		name: "evian",
+		description:
+			"Extensible command-based controls library for autonomous wheeled robots written using vexide.",
+		links: [
+			{
+				name: "Website",
+				href: "https://evian.vexide.dev/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/vexide/evian/",
+			},
+		],
+	},
+	{
+		name: "erebus",
+		description:
+			"Theme engine for pre-compiled GPUI applications that works by hooking low-level graphics APIs.",
+		links: [
+			{
+				name: "GitHub",
+				href: "https://github.com/tropicaaal/erebus/",
+			},
+		],
+	},
+	{
+		name: "taolib",
+		description:
+			"Autonomous C++ robot control library intended for competition use featuring real-time position tracking, motion control, and advanced data logging.",
+		links: [
+			{
+				name: "Website",
+				href: "https://taolib.vercel.app/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/tropicaaal/taolib/",
+			},
+		],
+	},
+	{
+		name: "vex-v5-qemu",
+		description:
+			"CPU1-level user code emulation of the VEX V5 brain in QEMU!",
+		links: [
+			{
+				name: "GitHub",
+				href: "https://github.com/vexide/vex-v5-qemu",
+			},
+		],
+	},
+	{
+		name: "cargo-v5",
+		description:
+			"CLI wrapper around cargo for uploading and managing projects written for VEX robots. Uses vex-v5-serial for low-level serial communication over USB, Bluetooth LE, or VEXnet.",
+		links: [
+			{
+				name: "GitHub",
+				href: "https://github.com/vexide/cargo-v5/",
+			},
+		],
+	},
+	{
+		name: "vex-serial",
+		description:
+			"Rust implementation of the serial communications protocol used by VEX V5 devices over USB and Bluetooth.",
+		links: [
+			{
+				name: "GitHub",
+				href: "https://github.com/vexide/vex-serial/",
+			},
+			{
+				name: "crates.io",
+				href: "https://crates.io/vex-v5-serial/",
+			},
+		],
+	},
+	{
+		name: "fluent-svelte",
+		description:
+			"Implementation of Microsoft's Fluent Design System Components in Svelte and TypeScript. Includes fully accessible, documented, and SSR-ready components.",
+		links: [
+			{
+				name: "Website",
+				href: "https://fluent-svelte.vercel.app/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/tropicaaal/fluent-svelte/",
+			},
+		],
+	},
+	{
+		name: "files.community",
+		description:
+			"Website I helped make for Files — a third party file manager app for windows with a modern design.",
+		links: [
+			{
+				name: "Website",
+				href: "https://files.community/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/files-community/website/",
+			},
+		],
+	},
+	{
+		name: "RoboStats & robotevents-rs",
+		description:
+			"Discord bot for viewing information about robotics competitions and teams on RobotEvents.com. Written in Rust using the Serenity framework and my own API wrapper around the RobotEvents v2 API. Used in over 350 communities.",
+		links: [
+			{
+				name: "Invite",
+				href: "https://discord.com/api/oauth2/authorize?client_id=1181453354677850172&permissions=414464657472&scope=bot+applications.commands/",
+			},
+			{
+				name: "GitHub (Bot)",
+				href: "https://github.com/lemlib/RoboStats/",
+			},
+			{
+				name: "GitHub (API)",
+				href: "https://github.com/lemlib/robotevents-rs/",
+			},
+			{
+				name: "crates.io",
+				href: "https://crates.io/robotevents/",
+			},
+		],
+	},
+	{
+		name: "ModernFlyouts Website",
+		description: "Simple static website I made for ModernFlyouts project.",
+		links: [
+			{
+				name: "Website",
+				href: "https://modernflyouts-community.github.io/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/ModernFlyouts-Community/ModernFlyouts-Community.github.io/",
+			},
+		],
+	},
+	{
+		name: "Dark Matter",
+		description:
+			"A cold, dark & frosty theme for the Discord chat application with over 1.5 million downloads.",
+		links: [
+			{
+				name: "Theme",
+				href: "https://betterdiscord.app/theme/Dark%20Matter/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/discordstyles/slate/",
+			},
+		],
+	},
+	{
+		name: "Slate",
+		description:
+			"An optimized, consistent, and functional theme for Discord based on GitHub's design language.",
+		links: [
+			{
+				name: "Theme",
+				href: "https://betterdiscord.app/theme/Slate/",
+			},
+			{
+				name: "Website",
+				href: "https://discordstyles.github.io/slate-theme/",
+			},
+			{
+				name: "GitHub",
+				href: "https://github.com/discordstyles/slate/",
+			},
+		],
+	},
 ];
 ---
 
@@ -229,12 +243,21 @@ const PROJECTS = [
 			</section>
 			<section class="bottom">
 				<p>
-					Hey, I'm Tropical - a programmer with interests in UI/UX
-					design, accessibility, embedded systems, frontend web development,
-					reverse-engineering, competitive robotics, and music. I really like <a href="https://www.rust-lang.org/" target="_blank" rel="noreferrer noopener">Rust</a>.
+					Hey, I'm Tropical - a programmer with interests in
+					interested in embedded devices, hardware hacking, software
+					reverse-engineering, competitive robotics, UI/UX
+					design/accessibility, and music. I really like <a
+						href="https://www.rust-lang.org/"
+						target="_blank"
+						rel="noreferrer noopener">Rust</a
+					>.
 					<br />
 					<br />
-					I'm currently studying CS as a student at <a href="https://auburn.edu/" target="_blank" rel="noreferrer noopener">Auburn</a>.
+					I'm currently studying CS as a student at <a
+						href="https://auburn.edu/"
+						target="_blank"
+						rel="noreferrer noopener">Auburn</a
+					>, where I do software for the Auburn Robotics Club.
 				</p>
 
 				<div class="buttons">
@@ -321,7 +344,7 @@ const PROJECTS = [
 			</section>
 		</aside>
 		<article>
-			<h1>Projects</h1>
+			<h1>My Stuff</h1>
 			<Projects projects={PROJECTS} />
 		</article>
 	</main>
@@ -357,7 +380,7 @@ const PROJECTS = [
 	}
 
 	section span {
-        animation: slide 250ms ease backwards 150ms;
+		animation: slide 250ms ease backwards 150ms;
 		text-transform: uppercase;
 		color: hsl(var(--accent-primary));
 		font-size: 14px;
@@ -375,7 +398,7 @@ const PROJECTS = [
 	}
 
 	h1 {
-        animation: slide 250ms ease backwards 100ms;
+		animation: slide 250ms ease backwards 100ms;
 		font-size: clamp(96px, min(16vh, 5vw), 128px);
 		font-family: var(--font-display);
 		font-weight: 400;
@@ -383,7 +406,7 @@ const PROJECTS = [
 	}
 
 	p {
-        animation: slide 250ms ease backwards 250ms;
+		animation: slide 250ms ease backwards 250ms;
 		line-height: 2;
 		font-size: 14px;
 	}
@@ -417,7 +440,8 @@ const PROJECTS = [
 		display: flex;
 		align-items: center;
 		justify-content: center;
-        animation: slide 250ms ease calc(350ms + var(--animation-stagger-delay)) backwards;
+		animation: slide 250ms ease calc(350ms + var(--animation-stagger-delay))
+			backwards;
 	}
 
 	.buttons a:active {
@@ -440,7 +464,8 @@ const PROJECTS = [
 	}
 
 	@media screen and (max-width: 1080px) {
-		:global(body), main {
+		:global(body),
+		main {
 			height: auto;
 		}
 

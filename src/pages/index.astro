@@ -243,10 +243,9 @@ const PROJECTS = [
 			</section>
 			<section class="bottom">
 				<p>
-					Hey, I'm Tropical - a programmer with interests in
-					interested in embedded devices, hardware hacking, software
-					reverse-engineering, competitive robotics, UI/UX
-					design/accessibility, and music. I really like <a
+					Hey, I'm Tropical - a programmer interested in embedded
+					devices, software/firmware reverse-engineering,
+					competitive robotics, UI/UX design/accessibility, and music. I really like <a
 						href="https://www.rust-lang.org/"
 						target="_blank"
 						rel="noreferrer noopener">Rust</a
@@ -257,7 +256,7 @@ const PROJECTS = [
 						href="https://auburn.edu/"
 						target="_blank"
 						rel="noreferrer noopener">Auburn</a
-					>, where I do software for the Auburn Robotics Club.
+					>, where I write software for the Auburn Robotics Club. 
 				</p>
 
 				<div class="buttons">
@@ -389,6 +388,10 @@ const PROJECTS = [
 
 	section.top {
 		border-bottom: 1px solid hsl(var(--background-tertiary));
+	}
+
+	section.bottom p {
+		max-width: 60ch;
 	}
 
 	section.bottom {
